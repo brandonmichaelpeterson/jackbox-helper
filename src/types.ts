@@ -15,6 +15,7 @@ export interface Game {
 export interface Pack {
   id: string;
   name: string;
+  shortName: string;
   releaseYear: number;
   games: Game[];
 }

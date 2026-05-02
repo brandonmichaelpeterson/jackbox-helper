@@ -8,6 +8,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-1',
     name: 'The Jackbox Party Pack',
+    shortName: 'Pack 1',
     releaseYear: 2014,
     games: [
       {
@@ -62,6 +63,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-2',
     name: 'The Jackbox Party Pack 2',
+    shortName: 'Pack 2',
     releaseYear: 2015,
     games: [
       {
@@ -116,6 +118,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-3',
     name: 'The Jackbox Party Pack 3',
+    shortName: 'Pack 3',
     releaseYear: 2016,
     games: [
       {
@@ -170,6 +173,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-4',
     name: 'The Jackbox Party Pack 4',
+    shortName: 'Pack 4',
     releaseYear: 2018,
     games: [
       {
@@ -224,6 +228,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-5',
     name: 'The Jackbox Party Pack 5',
+    shortName: 'Pack 5',
     releaseYear: 2019,
     games: [
       {
@@ -278,6 +283,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-6',
     name: 'The Jackbox Party Pack 6',
+    shortName: 'Pack 6',
     releaseYear: 2020,
     games: [
       {
@@ -332,6 +338,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-7',
     name: 'The Jackbox Party Pack 7',
+    shortName: 'Pack 7',
     releaseYear: 2021,
     games: [
       {
@@ -386,6 +393,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-8',
     name: 'The Jackbox Party Pack 8',
+    shortName: 'Pack 8',
     releaseYear: 2022,
     games: [
       {
@@ -440,6 +448,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-9',
     name: 'The Jackbox Party Pack 9',
+    shortName: 'Pack 9',
     releaseYear: 2022,
     games: [
       {
@@ -494,6 +503,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-10',
     name: 'The Jackbox Party Pack 10',
+    shortName: 'Pack 10',
     releaseYear: 2023,
     games: [
       {
@@ -548,6 +558,7 @@ export const packs: Pack[] = [
   {
     id: 'pack-11',
     name: 'The Jackbox Party Pack 11',
+    shortName: 'Pack 11',
     releaseYear: 2024,
     games: [
       {
@@ -601,6 +612,7 @@ export const packs: Pack[] = [
   {
     id: 'naughty-pack',
     name: 'The Jackbox Naughty Pack',
+    shortName: 'Naughty',
     releaseYear: 2024,
     games: [
       {
