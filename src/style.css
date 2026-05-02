@@ -155,6 +155,10 @@ body {
   align-items: center;
 }
 
+.pack-name-short {
+  display: none;
+}
+
 .player-input {
   width: 100%;
   margin-top: 0.4rem;
@@ -199,6 +203,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+
+  .pack-name-full {
+    display: none;
+  }
+
+  .pack-name-short {
+    display: inline;
   }
 }
 
@@ -379,6 +391,12 @@ body {
   /* transition is set dynamically by wheel.ts during spin */
 }
 
+/* 
+ the wheel spin will not play and go directly to the result. Some OS will have
+ system wide settings for reduced motion. If that is set and is detected through
+ the browser based on system settings, this will be triggered to prevent the
+ wheel spin.
+*/
 @media (prefers-reduced-motion: reduce) {
   .wheel {
     transition: none !important;

@@ -23,7 +23,8 @@ function renderPackFilters(): void {
         class="pack-checkbox"
         data-pack-id="${pack.id}"
       />
-      ${pack.name}
+      <span class="pack-name-full">${pack.name}</span>
+      <span class="pack-name-short">${pack.shortName}</span>
     </label>
   `).join('');
 
