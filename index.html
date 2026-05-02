@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackbox Helper</title>
+  </head>
+  <body>
+    <div id="app">
+
+      <header class="site-header">
+        <h1>Jackbox Helper</h1>
+        <p class="subtitle">Find a game to play!</p>
+      </header>
+
+      <main class="layout">
+
+        <!-- Sidebar: filters live here -->
+        <aside class="sidebar">
+          <section class="filter-group">
+            <h2>Packs You Own</h2>
+            <!-- Pack checkboxes will be injected here by JS -->
+            <div id="pack-filters"></div>
+          </section>
+
+          <section class="filter-group">
+            <h2>Player Count</h2>
+            <!-- Player count input will be injected here by JS -->
+            <div id="player-filter"></div>
+          </section>
+        </aside>
+
+        <!-- Main content: game cards + wheel button -->
+        <div class="content">
+          <div class="content-header">
+            <p id="results-count"></p>
+            <div class="header-actions">
+              <button id="spin-btn" class="btn-primary" disabled>Spin the Wheel</button>
+              <button id="surprise-btn" class="btn-secondary">Surprise Me</button>
+            </div>
+          </div>
+
+          <!-- Game cards will be injected here by JS -->
+          <div id="game-grid" class="game-grid"></div>
+        </div>
+
+      </main>
+
+      <!-- Modal overlay for game detail — hidden by default -->
+      <div id="modal-overlay" class="modal-overlay hidden">
+        <div class="modal">
+          <button id="modal-close" class="modal-close">✕</button>
+          <!-- Modal content will be injected by JS when a card is clicked -->
+          <div id="modal-content"></div>
+        </div>
+      </div>
+
+      <!-- Wheel overlay — hidden by default -->
+      <div id="wheel-overlay" class="modal-overlay hidden">
+        <div class="modal wheel-modal">
+          <button id="wheel-close" class="modal-close">✕</button>
+          <h2 class="wheel-title">Spin the Wheel</h2>
+          <div class="wheel-container">
+            <!-- Fixed pointer that sits above the wheel -->
+            <div class="wheel-pointer">▼</div>
+            <!-- The wheel itself — segments injected by JS -->
+            <div id="wheel" class="wheel"></div>
+          </div>
+          <button id="wheel-spin-btn" class="btn-primary">Spin!</button>
+
+          <!-- Result area — shown after the wheel stops -->
+          <div id="wheel-result" class="wheel-result hidden">
+            <p class="wheel-result-label">You got...</p>
+            <p id="wheel-result-name" class="wheel-result-name"></p>
+            <div class="wheel-result-actions">
+              <button id="wheel-play-btn" class="btn-primary">Take Me to Game</button>
+              <button id="wheel-respin-btn" class="btn-secondary">Spin Again</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
