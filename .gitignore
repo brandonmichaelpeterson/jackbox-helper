@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal reference notes (local only)
+DEV_NOTES.md
